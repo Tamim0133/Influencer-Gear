@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/output.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <script src="https://kit.fontawesome.com/c804650212.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="sticky top-0 z-50">
+        <nav class=" bg-white border-gray-200 z-50">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <!-- Left Section: Logo -->
+                <a href="#" class="flex items-center">
+                    <span class="self-center text-xl font-semibold whitespace-nowrap text-black">Influencer
+                        products</span>
+                </a>
+
+                <!-- Hamburger Menu Button (for mobile) -->
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+
+                <!-- Right Section: Menu Links and Icons -->
+                <div class="hidden w-full md:flex md:w-auto items-center justify-between" id="navbar-default">
+                    <ul
+                        class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-white md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+                        <li>
+                            <a href="#home"
+                                class="block py-2 px-3 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Home</a>
+                        </li>
+                        <li>
+                            <a href="#products"
+                                class="block py-2 px-3 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Products</a>
+                        </li>
+                        <li>
+                            <a href="#signin"
+                                class="block py-2 px-3 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Sign
+                                up</a>
+                        </li>
+                        <li>
+                            <a href="#login"
+                                class="block py-2 px-3 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Log
+                                In</a>
+                        </li>
+                    </ul>
+
+                    <!-- Right Icons: Search and Cart -->
+                    <div class="flex items-center space-x-4 ml-4">
+                        <!-- Search Icon -->
+                        <button id="search-btn" type="button" class="text-gray-500 hover:text-black focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M11 19a7 7 0 100-14 7 7 0 000 14zm8 2l-3-3"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section class="home">
+            <div id="home">
+                <div class="home-text">
+                    <h1 class="pri-font-color">Start your Journey as Influencer</h1>
+                    <p class="pri-font-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem vestibulum
+                        sed
+                        scelerisque eros. Lectus
+                        faucibus.</p>
+                    <button class="primary-btn">Preebook now</button>
+                </div>
+                <div class="home-image">
+                    <img src="images/main-camera.png" alt="" class="main-img">
+                    <!-- <img src="images/Circle design.svg" alt="" class="bg-img"> -->
+                </div>
+            </div>
+
+            <div class="fading-line pri-font-color"></div>
+            <div class="sponsors">
+                <img src="logos/Alibaba.svg" alt="">
+                <img src="logos/Amazon.svg" alt="">
+                <img src="logos/Daraz.pk Logo.svg" alt="">
+                <img src="logos/Ebay.svg" alt="">
+                <img src="logos/Rakuten.svg" alt="">
+                <img src="logos/Target.svg" alt="">
+                <img src="logos/Walmart.svg" alt="">
+            </div>
+
+            <div class="fading-line pri-font-color"></div>
+        </section>
+
+        <section id="products" class="popular-collection">
+            <div id="popular-collection"
+                style="margin-top: 8vh; margin-bottom: 8vh; margin-right: 12%; margin-left: 12%;">
+                <h3 style="text-align: center; font-size: 1.5rem; font-weight: bold; margin-bottom: 30px;">Popular
+                    Collection</h3>
+                <div class="cards" style="display: grid; grid-template-columns: repeat(3,1fr); gap: 40px;">
+                    <div class="card"
+                        style="padding: 10px; padding-bottom: 40px; border: none; border-radius: 2px; box-shadow: 2px 2px 10px 10px lightgray; display: flex; flex-direction: column; gap: 10px;">
+                        <img src="images/tripod.png" alt="">
+                        <h3 style="font-size: 2rem; font-weight: 500;">Flex Tripod</h3>
+                        <h4 class="price" style="font-size: 1.5rem; font-weight: 500;">$50.48</h4>
+                        <div class="rating flex justify-between" style="width: 40%;">
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <p style="margin-right: 20px;">4.99</p>
+                        </div>
+                        <div class="card-info">
+                            <p class="shifting card-font">Worldwide Shifting</p>
+                            <p class="avaiability card-font">Available</p>
+                            <p class="buyers-protection card-font">Buyers Protection Possible</p>
+                        </div>
+                    </div>
+                    <div class="card"
+                        style="padding: 10px; padding-bottom: 40px; border: none; border-radius: 2px; box-shadow: 2px 2px 10px 10px lightgray; display: flex; flex-direction: column; gap: 10px;">
+                        <img src="images/mic.png" alt="">
+                        <h3 style="font-size: 2rem; font-weight: 500;">Microphone</h3>
+                        <h4 class="price" style="font-size: 1.5rem; font-weight: 500;">$120.8</h4>
+                        <div class="rating flex justify-between" style="width: 40%;">
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <p style="margin-right: 20px;">4.99</p>
+                        </div>
+                        <div class="card-info">
+                            <p class="shifting card-font">Worldwide Shifting</p>
+                            <p class="avaiability card-font">Available</p>
+                            <p class="buyers-protection card-font">Buyers Protection Possible</p>
+                        </div>
+                    </div>
+
+                    <div class="card"
+                        style="padding: 10px; padding-bottom: 40px; border: none; border-radius: 2px; box-shadow: 2px 2px 10px 10px lightgray; display: flex; flex-direction: column; gap: 10px;">
+                        <img src="images/airpod.png" alt="">
+                        <h3 style="font-size: 2rem; font-weight: 500;">Air Pods</h3>
+                        <h4 class="price" style="font-size: 1.5rem; font-weight: 500;">$100.00</h4>
+                        <div class="rating flex justify-between" style="width: 40%;">
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <p style="margin-right: 20px;">4.99</p>
+                        </div>
+                        <div class="card-info">
+                            <p class="shifting card-font">Worldwide Shifting</p>
+                            <p class="avaiability card-font">Available</p>
+                            <p class="buyers-protection card-font">Buyers Protection Possible</p>
+                        </div>
+                    </div>
+
+                    <div class="card"
+                        style="padding: 10px; padding-bottom: 40px; border: none; border-radius: 2px; box-shadow: 2px 2px 10px 10px lightgray; display: flex; flex-direction: column; gap: 10px;">
+                        <img src="images/drone.png" alt="">
+                        <h3 style="font-size: 2rem; font-weight: 500;">Drone</h3>
+                        <h4 class="price" style="font-size: 1.5rem; font-weight: 500;">$980.7</h4>
+                        <div class="rating flex justify-between" style="width: 40%;">
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <p style="margin-right: 20px;">4.99</p>
+                        </div>
+                        <div class="card-info">
+                            <p class="shifting card-font">Worldwide Shifting</p>
+                            <p class="avaiability card-font">Available</p>
+                            <p class="buyers-protection card-font">Buyers Protection Possible</p>
+                        </div>
+                    </div>
+
+                    <div class="card"
+                        style="padding: 10px; padding-bottom: 40px; border: none; border-radius: 2px; box-shadow: 2px 2px 10px 10px lightgray; display: flex; flex-direction: column; gap: 10px;">
+                        <img src="images/lights.png" alt="">
+                        <h3 style="font-size: 2rem; font-weight: 500;">Light setup</h3>
+                        <h4 class="price" style="font-size: 1.5rem; font-weight: 500;">$120.7</h4>
+                        <div class="rating flex justify-between" style="width: 40%;">
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <p style="margin-right: 20px;">4.99</p>
+                        </div>
+                        <div class="card-info">
+                            <p class="shifting card-font">Worldwide Shifting</p>
+                            <p class="avaiability card-font">Available</p>
+                            <p class="buyers-protection card-font">Buyers Protection Possible</p>
+                        </div>
+                    </div>
+
+                    <div class="card"
+                        style="padding: 10px; padding-bottom: 40px; border: none; border-radius: 2px; box-shadow: 2px 2px 10px 10px lightgray; display: flex; flex-direction: column; gap: 10px;">
+                        <img src="images/single-light.png" alt="">
+                        <h3 style="font-size: 2rem; font-weight: 500;">Green Screen</h3>
+                        <h4 class="price" style="font-size: 1.5rem; font-weight: 500;">$220.7</h4>
+                        <div class="rating flex justify-between" style="width: 40%;">
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <p style="margin-right: 20px;">4.99</p>
+                        </div>
+                        <div class="card-info">
+                            <p class="shifting card-font">Worldwide Shifting</p>
+                            <p class="avaiability card-font">Available</p>
+                            <p class="buyers-protection card-font">Buyers Protection Possible</p>
+                        </div>
+                    </div>
+                    <div class="card"
+                        style="padding: 10px; padding-bottom: 40px; border: none; border-radius: 2px; box-shadow: 2px 2px 10px 10px lightgray; display: flex; flex-direction: column; gap: 10px;">
+                        <img src="images/setup.png" alt="">
+                        <h3 style="font-size: 2rem; font-weight: 500;">Photoshot Set</h3>
+                        <h4 class="price" style="font-size: 1.5rem; font-weight: 500;">$190.7</h4>
+                        <div class="rating flex justify-between" style="width: 40%;">
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <p style="margin-right: 20px;">4.99</p>
+                        </div>
+                        <div class="card-info">
+                            <p class="shifting card-font">Worldwide Shifting</p>
+                            <p class="avaiability card-font">Available</p>
+                            <p class="buyers-protection card-font">Buyers Protection Possible</p>
+                        </div>
+                    </div>
+                    <div class="card"
+                        style="padding: 10px; padding-bottom: 40px; border: none; border-radius: 2px; box-shadow: 2px 2px 10px 10px lightgray; display: flex; flex-direction: column; gap: 10px;">
+                        <img src="images/camera.png" alt="">
+                        <h3 style="font-size: 2rem; font-weight: 500;">Vlogging Camera</h3>
+                        <h4 class="price" style="font-size: 1.5rem; font-weight: 500;">$1200.7</h4>
+                        <div class="rating flex justify-between" style="width: 40%;">
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <p style="margin-right: 20px;">4.99</p>
+                        </div>
+                        <div class="card-info">
+                            <p class="shifting card-font">Worldwide Shifting</p>
+                            <p class="avaiability card-font">Available</p>
+                            <p class="buyers-protection card-font">Buyers Protection Possible</p>
+                        </div>
+                    </div>
+                    <div class="card"
+                        style="padding: 10px; padding-bottom: 40px; border: none; border-radius: 2px; box-shadow: 2px 2px 10px 10px lightgray; display: flex; flex-direction: column; gap: 10px;">
+                        <img src="images/action.png" alt="">
+                        <h3 style="font-size: 2rem; font-weight: 500;">Action Camera</h3>
+                        <h4 class="price" style="font-size: 1.5rem; font-weight: 500;">$320.7</h4>
+                        <div class="rating flex justify-between" style="width: 40%;">
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <img width="16" height="16" src="https://img.icons8.com/tiny-color/16/star.png"
+                                alt="star" />
+                            <p style="margin-right: 20px;">4.99</p>
+                        </div>
+                        <div class="card-info">
+                            <p class="shifting card-font">Worldwide Shifting</p>
+                            <p class="avaiability card-font">Available</p>
+                            <p class="buyers-protection card-font">Buyers Protection Possible</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="see-more">
+            <h3>See More <i class="fa-solid fa-arrow-right"></i></h3>
+        </div>
+
+        <section class="featured-products">
+            <img src="images/gear.png" alt="">
+            <div class="info">
+                <h3>Featured products at one place</h3>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+                <button>Join Now</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h3>Influencer products</h3>
+            <p>Copyright © 2020 influencer products</p>
+            <p>All rights reserved</p>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
